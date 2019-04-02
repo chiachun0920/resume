@@ -89,10 +89,10 @@
     - Rxjs
 - Web後端：
     - Node.js
-    - express
     - Parse server
     - mongo
-
+    - aws console
+    - docker
 
 
 
