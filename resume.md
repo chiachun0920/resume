@@ -1,14 +1,43 @@
 # 個人資訊
-- 張家峻/男/25 years
+- 張家峻/男/27 years
 - 台灣科技大學/資訊工程系/學士
-- 工作年資：1年
-- github：https://github.com
+- 工作年資：3年
+- github：https://github.com/chiachun0920
 - email：chiachun0920@gmail.com
 - 期望職位：前端工程師、後端工程師
 
 # 工作經歷
 
-## 中國附醫資訊室 (2016/09-*)
+## 雲發互動科技 (2017/11 - ＊)
+
+在這裡我擔任全端工程師，負責維護網站後台及 API 開發。
+
+### **巨量資料匯出**
+
+這樣的 API 會遇到的挑戰就是容易造成 server loading 過重，不管是 db 或是 instance
+
+所以面對這樣的問題採用了 amqp 當作 message broker，將 mission 發出去給其他 worker 處理。
+
+最後透過 s3 sdk 以串流的方式上傳到 aws s3 bucket,
+
+成功降低 api server 的負擔。
+
+### **Batch API**
+
+為了提升前端取資料的效能，我們將許多的 API 包裝處理，以 message dispatch 的方式交由 worker 來消化
+
+達成 One request, all response, 成功降低 前端取得資料的 transmission time
+
+
+### **維護 no8 console**
+
+使用了 Angular 搭配 Parse sdk 來開發，上線一年多的時間經歷過多次改版，
+
+大量使用 Rxjs 來 解決非同步訊息傳輸的問題，
+
+且透過 Nativescript 這樣的框架，來快速上架 mobile application。
+
+## 中國附醫資訊室 (2016/09-2017/10)
 
 在這裡我擔任程式設計師，大部分時間負責web前端的部分，偶而支援後端
 
@@ -38,13 +67,15 @@
 
 最後這個專案在時程的壓力下，成功上線運行。
 
-![123](http://i.imgur.com/U8np8dP.png)
-
 # 開源作品集
 
-- ccc-ui：為了日後開發網站需要而開發一些比較常用及特殊的UI，以Angular來撰寫
-    - demo : https://chiachun0920.github.io/ccc-ui/
-    - source code : https://github.com/chiachun0920/ccc-ui
+- ccc-ui：為了日後開發網站需要而開發一些比較常用及特殊的UI，以 Angular 來撰寫
+    - demo: https://chiachun0920.github.io/ccc-ui/
+    - source code: https://github.com/chiachun0920/ccc-ui 
+- retryp: function to retry promise if encountering an error, and return promise.
+    - source code: https://github.com/chiachun0920/retryp
+- efficient-scheduler: Schedule a timeout job by efficiently using setTimeout
+    - source code: https://github.com/chiachun0920/efficient-timeout
 
 # 學生時期作品
 
@@ -54,11 +85,13 @@
 # 使用的技術清單
 - Web前端：
     - CSS、Html、Javascript
-    - Angular 4.0
+    - Angular
     - Rxjs
 - Web後端：
     - Node.js
     - express
+    - Parse server
+    - mongo
 
 
 
