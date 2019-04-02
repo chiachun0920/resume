@@ -26,6 +26,8 @@
 
 為了提升前端取資料的效能，我們將許多的 API 包裝處理，以 message dispatch 的方式交由 worker 來消化
 
+並搭配 amqp rpc model 來取得 worker 的處理結果，
+
 達成 One request, all response, 成功降低 前端取得資料的 transmission time
 
 
